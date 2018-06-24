@@ -27,7 +27,6 @@ def __fft(a, inverse=False):
         temp = Complex.mult(w[k], odd_part[k])
         result.insert(k, Complex.add(even_part[k], temp))
         result.append(Complex.sub(even_part[k], temp))
-
     return result
 
 def transform(a):
